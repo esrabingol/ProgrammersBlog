@@ -30,6 +30,49 @@ namespace ProgrammersBlog.Data.Concrete.EntityFramework.Mappings
 			builder.ToTable("Categories");
 
 
+			builder.HasData(
+				new Category
+				{
+					Id = 1,
+					Name = "C#",
+					Description = "Current information about the C# programming language",
+					IsActive = true,
+					IsDeleted = false,
+					CreatedByName = "InitialCreate",
+					CreatedDate = DateTime.Now,
+					ModifiedByName = "InitialCreate",
+					ModifiedDate = DateTime.Now,
+					Note = "C# Blog category",
+
+				},
+				new Category
+				{
+					Id = 2,
+					Name = "C++",
+					Description = "Current information about the C++ programming language",
+					IsActive = true,
+					IsDeleted = false,
+					CreatedByName = "InitialCreate",
+					CreatedDate = DateTime.Now,
+					ModifiedByName = "InitialCreate",
+					ModifiedDate = DateTime.Now,
+					Note = "C++ Blog category",
+				},
+				new Category
+				{
+					Id = 3,
+					Name = "JavaScript",
+					Description = "Current information about the JavaScript programming language",
+					IsActive = true,
+					IsDeleted = false,
+					CreatedByName = "InitialCreate",
+					CreatedDate = DateTime.Now,
+					ModifiedByName = "InitialCreate",
+					ModifiedDate = DateTime.Now,
+					Note = "JavaScript Blog category",
+				}
+			);
+
 		}
 	}
 }
