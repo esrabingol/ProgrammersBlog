@@ -1,7 +1,13 @@
+using ProgrammersBlog.Services.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+//ConfigureService
+builder.Services.AddControllers();
+builder.Services.LoadMyService();
 
 var app = builder.Build();
 
